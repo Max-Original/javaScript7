@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>My practise doc</title>
+<script src="documentsSelectors.js"></script>
+</head>
+<body>
+
+	<!-- get elements by id  -->
+	<div id="content-holder">
+		<div id="content">Custom element</div>
+	</div>
+
+	<button onclick="selectByIdElement()">select element by id</button>
+	<button onclick="changeColor()">Change background</button>
+
+	<!-- get elements by tag name -->
+
+	<table id="custom-table">
+		<tr>
+			<td><label>First data <input type="radio" name="first"
+					value="First input"></label> <label>Second data <input
+					type="radio" name="first" value="Second input"></label> <label>Third
+					data <input type="radio" name="first" value="Third input">
+			</label></td>
+		</tr>
+	</table>
+
+	<button onclick="selectByTagName()">Switch radioButton</button>
+
+	<!-- use query selectors -->
+
+	<ul>
+		<li>This</li>
+		<li>test</li>
+	</ul>
+
+	<ul>
+		<li>is</li>
+		<li>passed</li>
+	</ul>
+
+	<button onclick="useQuerySelector()">exstract all last units
+		from list</button>
+
+	<div id="divWithCustomAttributes"
+		data-about="Some text from data-about"
+		data-something-and-something="something - something">Hello to
+		you.</div>
+
+	<button onclick="selectCustomAttributes()">select data</button>
+
+</body>
+</html>
